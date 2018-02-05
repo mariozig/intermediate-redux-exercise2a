@@ -8,6 +8,10 @@ Play with Babel language features and debug in VSCode.
 1. Set a breakpoint
 1. Hit `F5`
 
+Alternately
+
+ `npm start`
+
 Sourcemaps and line numbers should be correct.
 
 ### Adding babel features
