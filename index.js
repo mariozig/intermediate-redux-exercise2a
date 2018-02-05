@@ -1,4 +1,5 @@
 import { createStore } from 'redux'
+import deepfreeze from 'deep-freeze'
 
 function printState() {
   console.log(store.getState())
@@ -7,12 +8,16 @@ function printState() {
 const INCREMENT = 'INCREMENT'
 const DECREMENT = 'DECREMENT'
 
-const reducer = (state = 0, action) => {
+const reducer = (
+  state = { counter: 0, loggedIn: true, name: 'ryan' },
+  action
+) => {
+  deepfreeze(state)
   switch (action.type) {
     case INCREMENT:
-      return state + 1
+      return { ...state, counter: state.counter + 1 }
     case DECREMENT:
-      return state - 1
+      return { ...state, counter: state.counter - 1 }
     default:
       return state
   }

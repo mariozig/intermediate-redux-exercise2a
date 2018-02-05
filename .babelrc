@@ -1,6 +1,9 @@
 {
   "presets": ["env"],
-  "plugins": ["transform-async-generator-functions"],
+  "plugins": [
+    "transform-async-generator-functions",
+    "transform-object-rest-spread"
+  ],
   "sourceMaps": true,
   "retainLines": true
 }
