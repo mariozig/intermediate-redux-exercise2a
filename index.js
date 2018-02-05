@@ -28,11 +28,11 @@ const store = createStore(reducer)
 store.subscribe(printState)
 
 const increment_action = {
-  type: 'INCREMENT'
+  type: INCREMENT
 }
 
 const decrement_action = {
-  type: 'DECREMENT'
+  type: DECREMENT
 }
 
 store.dispatch(increment_action)
