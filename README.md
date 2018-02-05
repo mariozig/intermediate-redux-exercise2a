@@ -4,7 +4,7 @@ Play with Babel language features and debug in VSCode.
 
 1. `npm install babel-cli -g`
 1. `npm install`
-1. Open `index.html` in VSCode
+1. Open `index.js` in VSCode
 1. Set a breakpoint
 1. Hit `F5`
 
